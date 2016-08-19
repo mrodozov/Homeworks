@@ -1,0 +1,64 @@
+------- C++ -----------
+
+1. Прости типове
+2. Логически условия и цикли
+3. Масиви 
+4. Прости примери
+5. Фунции
+6. Структури
+7. Класове
+
+ - static, inheritance & access level (ppp), overload override, const correctness
+ - пример с this: printObjField() { cout << this->someObjField << endl; } да принтира стойности специфични за обекта
+ - Пример RPCNTChain за дефиниции vs използване (objects)
+ - конструктори, деструктори
+ - type casting (примери с ROOT cast от TObject към конкретен тип (TH1 или TTree примерно), ObjC директен каст)
+    - пример от double към int
+    - пример с ROOT
+ 
+8 Интерфейси - design with i-faces only, abstract base class
+    abstract base class, virtual keyword - идеята на абк е други класове да го наследяват, а поинтъри от базовия клас да се ползват като универсална референция към конкретни обекти от дъщерни класове
+    пример abstract base class RawCosmicData, cocoa touch tap events, obj c protocols, Qt signal & slots 
+      - пример едно - указване на поле от абстрактен тип в интерфейса който се сменя за всяка импл. Coupling в този контекст
+      - пример две - дефиниране на метод, вземащ параметър absBaseType pointer с конкретен call на някой от методите му. различни имплементации
+      - API чрез имплментация на протоколи
+      - example с this в контекста на absBaseClass (сочи към правилния метод)
+    пример за запълване на предварително дефиниран скелет с желаната от нас конкретика
+    пример за responsibilities separation - network manager, data manager (публичните методи се използват за интеракции с мрежата и данните, скритите методи на хендлърите вършат работата под капака)
+    пример с прототип на функция
+    пример с динамични библиотеки и хедърите към тях
+    covariant and contravariant casting (примери с ROOT и ObjC)
+    
+    
+    
+9. Темплейти
+    
+    пример за абстрактно(генерично) програмиране с templates и abstract based classes
+
+13., IO (streams, data access - DB, API, ROOT files, local text files, HTTP and webservers)
+callbacks (root minimization algo implementation), lambda, JSON,XML, etc
+    
+ --------------------- конкретни често използвани концепции
+    
+10. Динамика и живот на обектите
+    
+11. Threads (нишки) - пример с еднотипни задачи (event data model HEP), decoupling с queue's, shared data, race conditions, deadlocks
+    asynch (пример с js, python, iOS) & synch calls (blocking & non-blocking approaches)
+    
+12. UI examples, event loops
+    Qt, iOS, GTK, KDE
+    
+
+---------------------- ROOT & Physics
+
+14. ROOT, HEP Event data model
+15. TTree, Event
+
+---------------------- Linux 
+
+Libs building 
+
+------------------------ Etc.
+
+Homeworks delivery deadlines levels - green, yellow and red
+Source control - Ivan
