@@ -20,10 +20,10 @@ public:
   //JetFighterPlane * getPlane() { return this->getPlane();}
   //void setPlane(JetFighterPlane * p) { this->setPlane(p); }
   JetFighterPlane * getJetFigter() { return dynamic_cast<JetFighterPlane*>(this->getPlane());}
+  Airplane * getJetFighterAsAirplain () { return dynamic_cast<Airplane*>(this->getPlane()); }
   
   /* get set the delegate pointer */
   
-  //virtual void setDelegate(BasePlaneInstructionsProtocol * delegate){ this->delegate_ = delegate; }
   virtual void setDelegateForPlane();
   virtual BasePlaneInstructionsProtocol * getDelegate() { return this->delegate_; }
   

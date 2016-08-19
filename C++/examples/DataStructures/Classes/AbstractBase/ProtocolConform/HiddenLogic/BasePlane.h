@@ -10,10 +10,11 @@ using namespace std;
 class BasePlaneInstructionsProtocol { // that's one interface
 protected:
   
-  BasePlaneInstructionsProtocol * delegate_;
+  //BasePlaneInstructionsProtocol * delegate_;
   vector<string> flightPlan_;
   
 public:
+  BasePlaneInstructionsProtocol * delegate_;
   
   virtual string getNextInstruction() = 0;
   virtual void startInstruction(const string & order) = 0;

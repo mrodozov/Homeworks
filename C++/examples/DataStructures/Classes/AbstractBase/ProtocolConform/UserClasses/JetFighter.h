@@ -19,9 +19,9 @@ public:
   /* JetFighter specific */
   
   virtual void fireRocket();
-  //virtual string getNextInstruction();
+//   virtual string getNextInstruction();
   
-  
+//   virtual void setDelegate(BasePlaneInstructionsProtocol * d);
   
   JetFighterPlane ( const unsigned int& passangers, const unsigned int& pilots );
   JetFighterPlane();

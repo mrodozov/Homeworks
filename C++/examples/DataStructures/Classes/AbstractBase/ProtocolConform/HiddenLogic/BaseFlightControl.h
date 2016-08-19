@@ -7,7 +7,7 @@ class BaseFlightControl : public BaseCommunications {
   
 private:
   
-  BaseAirplane * plane_;
+  Airplane * plane_;
   
 protected:  
   
@@ -20,9 +20,9 @@ protected:
 public:
   virtual void startFlight( BaseFlightControl * controlTower  );
   
-  virtual void setPlane(BaseAirplane * plane) {this->plane_ = plane; }
+  virtual void setPlane(Airplane * plane) {this->plane_ = plane; }
   
-  virtual BaseAirplane * getPlane() {return this->plane_;}
+  virtual Airplane * getPlane() {return this->plane_;}
   
   // comm
   virtual BaseMessages getResponseFor(BaseMessages recieved);
